@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تجارت الکترونیک</title>
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap.min.css"
+    />
+    <!--custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/6cd4ab7198.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-light navbar-expand-lg bg-white py-4 fixed-top shadow-lg"
+    >
+      <div class="container">
+        <a
+          href="index.html"
+          class="navbar-brand order-lg-1 d-flex justify-content-center align-items-center gap-1"
+        >
+          <span class="text-uppercase fw-lighter ms-2"> لباس </span>
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+
+        <div class="order-lg-3 nav-btns">
+          <button type="button" class="btn position-relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              >5</span
+            >
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa-solid fa-heart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              >5</span
+            >
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              >5</span
+            >
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-2" id="navbarmenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item p-2 border-bottom">
+              <a href="#header" class="nav-link text-dark">صفحه اصلی</a>
+            </li>
+            <li class="nav-item p-2 border-bottom">
+              <a href="#collection" class="nav-link text-dark">کلکسیون</a>
+            </li>
+            <li class="nav-item p-2 border-bottom">
+              <a href="#special" class="nav-link text-dark">فروش ویژه</a>
+            </li>
+            <li class="nav-item p-2 border-bottom">
+              <a href="#blog" class="nav-link text-dark">وبلاگ</a>
+            </li>
+            <li class="nav-item p-2 border-bottom">
+              <a href="#about" class="nav-link text-dark">درباره ما</a>
+            </li>
+            <li class="nav-item p-2 border-bottom">
+              <a href="#popular" class="nav-link text-dark">مدترین ها</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- header -->
+    <header
+      id="header"
+      class="vh-100 carousel slide"
+      style="padding-top: 120px"
+      data-bs-ride="carousel"
+    >
+      <div
+        class="img-head container mx-auto h-100 d-flex align-items-center carousel-inner"
+      >
+        <div class="img-head text-center carousel-item active">
+          <h2 class="img-head text-white">بهترین کلکسیون ها</h2>
+          <h1 class="py-2 fw-bold text-white">جدیدترین ها</h1>
+          <div class="btn mt-3">خرید کن</div>
+        </div>
+        <div class="img-head text-center carousel-item">
+          <h2 class="text-white">با بهترین قیمت و تخفیف</h2>
+          <h1 class="py-2 fw-bold text-white">فصل جدید</h1>
+          <div class="btn mt-3">خرید کن</div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        data-bs-target="#header"
+        type="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon bg-dark rounded"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        data-bs-target="#header"
+        type="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon bg-dark rounded"></span>
+      </button>
+    </header>
+    <!-- end of header -->
+    <!-- collection -->
+    <secton id="collection" class="">
+      <div class="container py-5">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">جدیدترین کلکسیون ها</h2>
+        </div>
+        <div class="row g-0">
+          <div
+            class="d-flex flex-wrap justify-content-center mt-5 button-group filter-button-group"
+          >
+            <button class="btn m-2 text-dark active-filter-btn" data-filter="*">
+              همه
+            </button>
+            <button
+              class="collection-text btn m-2 text-dark"
+              data-filter=".best"
+            >
+              پرفروش ها
+            </button>
+            <button
+              class="collection-text btn m-2 text-dark"
+              data-filter=".feat"
+            >
+              مدترین ها
+            </button>
+            <button
+              class="collection-text btn m-2 text-dark"
+              data-filter=".new"
+            >
+              جدیدترین ها
+            </button>
+          </div>
+        </div>
+        <div class="collection-list mt-4 row gx-0 gy-3">
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+            <div class="collection-img">
+              <img src="./images/c1.jpg" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 best" id="best">
+            <div class="collection-img">
+              <img src="./images/c2.jfif" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 new" id="new">
+            <div class="collection-img">
+              <img src="./images/c3.jpg" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" id="feat">
+            <div class="collection-img">
+              <img src="./images/c4.jpg" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 best" id="best">
+            <div class="collection-img">
+              <img src="./images/c5.jpg" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 new" id="new">
+            <div class="collection-img">
+              <img src="./images/c6.jfif" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2" id="feat">
+            <div class="collection-img">
+              <img src="./images/c7.jfif" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2" id="best">
+            <div class="collection-img">
+              <img src="./images/c8.jfif" alt="" class="w-100" />
+              <span class="position-absolute bg-primary text-white text-center">
+                فروش<br />
+                ویژه
+              </span>
+            </div>
+            <div class="text-center">
+              <div class="rating m-3">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary"> <i class="fa fa-star"></i> </span
+                ><span class="text-primary">
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="my-1">لباس</p>
+                <span class="fw-bold">20000تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secton>
+    <!-- end of collection -->
+    <!-- special products -->
+    <section id="special" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">مجموعه ویژه</h2>
+        </div>
+        <div class="special-list row g-0">
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img position-relative overflow-hidden">
+              <img src="./images/s1.jpg" class="w-100" alt="" />
+
+              <span
+                class="position-absolute d-flex justify-content-center align-items-center text-primary"
+              >
+                <i class="fas fa-heart"></i>
+              </span>
+            </div>
+            <div class="text-center">
+              <p class="mt-3 mb-1">بلوز و شلوار</p>
+              <span class="fw-bold d-block">20000تومان</span>
+              <a href="" class="btn btn-primary mt-3">افزودن به سبد</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img position-relative overflow-hidden">
+              <img src="./images/s2.jpg" class="w-100" alt="" />
+
+              <span
+                class="position-absolute d-flex justify-content-center align-items-center text-primary"
+              >
+                <i class="fas fa-heart"></i>
+              </span>
+            </div>
+            <div class="text-center">
+              <p class="mt-3 mb-1">بلوز و شلوار</p>
+              <span class="fw-bold d-block">20000تومان</span>
+              <a href="" class="btn btn-primary mt-3">افزودن به سبد</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img position-relative overflow-hidden">
+              <img src="./images/s3.jpg" class="w-100" alt="" />
+
+              <span
+                class="position-absolute d-flex justify-content-center align-items-center text-primary"
+              >
+                <i class="fas fa-heart"></i>
+              </span>
+            </div>
+            <div class="text-center">
+              <p class="mt-3 mb-1">بلوز و شلوار</p>
+              <span class="fw-bold d-block">20000تومان</span>
+              <a href="" class="btn btn-primary mt-3">افزودن به سبد</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img position-relative overflow-hidden">
+              <img src="./images/s4.jpg" class="w-100" alt="" />
+
+              <span
+                class="position-absolute d-flex justify-content-center align-items-center text-primary"
+              >
+                <i class="fas fa-heart"></i>
+              </span>
+            </div>
+            <div class="text-center">
+              <p class="mt-3 mb-1">بلوز و شلوار</p>
+              <span class="fw-bold d-block">20000تومان</span>
+              <a href="" class="btn btn-primary mt-3">افزودن به سبد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of special products -->
+    <!-- offer -->
+    <section id="offers" class="py-5">
+      <div class="container">
+        <div class="img row d-flex text-center align-items-center justify-content-center ">
+          <img src="./images/o5.jpg" class="rounded mx-auto" />
+          <div class="offers-content">
+            <span class="text-white"> تخفیف ویژه بیش از 40% </span>
+            <h2 class="mt-2 mb-4 text-white">پیشنهاد فروش ویژه!</h2>
+            <a href="" class="btn">خرید کن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of offer -->
+    <!-- blogs -->
+    <section id="blog" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">جدیدترین وبلاگ</h2>
+        </div>
+        <div class="row g-3">
+          <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+            <img src="./images/v1.jpg" class="img-card rounded" alt="" />
+            <div class="card-body px-0">
+              <h4 class="card-title">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+              </h4>
+              <p class="card-text mt-3 text-muted">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              </p>
+              <p class="card-text text-muted">
+                <small class=""> <span class="fw-bold">نویسنده:</span>لورم </small>
+              </p>
+              <a href="#" class="btn">بیشتر</a>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+            <img src="./images/v2.jpg" class="img-card rounded"  alt="" />
+            <div class="card-body px-0">
+              <h4 class="card-title">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+              </h4>
+              <p class="card-text mt-3 text-muted">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              </p>
+              <p class="card-text text-muted">
+                <small class=""> <span class="fw-bold">نویسنده:</span>لورم </small>
+              </p>
+              <a href="#" class="btn">بیشتر</a>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+            <img src="./images/v3.jpg" class="img-card rounded" alt="" />
+            <div class="card-body px-0">
+              <h4 class="card-title">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+              </h4>
+              <p class="card-text mt-3 text-muted">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              </p>
+              <p class="card-text text-muted">
+                <small class=""> <span class="fw-bold">نویسنده:</span>لورم </small>
+              </p>
+              <a href="#" class="btn">بیشتر</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of blogs -->
+    <!-- about us -->
+     <section id="about" class="py-5">
+      <div class="container">
+        <div class="row gy-lg-5 align-items-center">
+          <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block ms-4">درباره ما</h2>
+           </div>
+           <div class="lead text-muted">
+            ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+           </div>
+           
+          </div>
+          <div class="col-lg-6 order-lg-0">
+            <img src="./images/a.jpg" alt="" class="img-fluid w-100 rounded">
+           </div>
+        </div>
+      </div>
+     </section>
+    <!-- end of about us -->
+     <!-- popular -->
+      <section id="popular" class="py-5">
+        <div class="container">
+          <div class="title text-center pt-3 pb-5">
+            <h2 class="position-relative d-inline-block ms-4">مدترین های امسال</h2>
+         </div>
+         <div class="row">
+          
+         <div class=" col-md-6 col-lg-4 g-3">
+          <h3 class="fs-5">جدیدترین ها</h3>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p1.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <span>20000تومان</span>
+          </div>
+        </div>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p2.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <span>20000تومان</span>
+          </div>
+        </div>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p3.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <span>20000تومان</span>
+          </div>
+        </div>
+        </div>
+
+        <div class=" col-md-6 col-lg-4 g-3">
+          <h3 class="fs-5">پرفروش ترین ها</h3>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p4.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <span>20000تومان</span>
+          </div>
+        </div>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p5.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <span>20000تومان</span>
+          </div>
+        </div>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p6.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <span>20000تومان</span>
+          </div>
+        </div>
+        </div>
+
+        <div class=" col-md-6 col-lg-4 g-3">
+          <h3 class="fs-5">در تخفیف</h3>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p7.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <p >20000تومان</p>
+          </div>
+        </div>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p8.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <p >20000تومان</p>
+          </div>
+        </div>
+          <div class="d-flex align-items-start justify-content-start">
+            <img src="./images/p9.jpg" alt="" class="img-fluid pe-3 w-25">
+            <div class="">
+          <p class="mb-0">پیراهن</p>
+          <p  >20000تومان</p>
+          </div>
+        </div>
+        </div>
+         </div>
+
+         </div>
+        </div>
+      </section>
+     <!-- end of popular -->
+      <!-- news letter -->
+      <section id="news-letter" class="py-5">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="title text-center pt-3 pb-5">
+              <h2 class="position-relative d-inline-block ms-4">با ما همراه شوید</h2>
+           </div>
+           <p class="text-center text-muted">
+            ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+            در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+            نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+           </p>
+           <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="ایمیل تون رو وارد کنید...">
+            <button class="btn btn-primary" type="submit">عضو شدن</button>
+           </div>
+          </div>
+          </div>
+      </section>
+      <!-- end of news letter -->
+        <!-- footer -->
+         <footer class="bg-dark py-5">
+          <div class="container">
+            <div class="row text-white g-4">
+              <div class="col-md-6 col-lg-3 order-lg-4 order-md-1">
+                <a href="" class="text-decoration-none text-white brand">لباس</a>
+                <p class="text-white-50 mt-3">
+                  ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+            در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+            نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-3 order-lg-3 order-md-2">
+                <h5 class="fw-light">لینک ها</h5>
+                <ul class="list-unstyled">
+                  <li class="my-3">
+                <a href="" class="text-decoration-none text-white">
+                  <i class="fas fa-chevron-left me-1"></i>صفحه اصلی
+                </a>
+                  </li>
+
+                  <li class="my-3">
+                    <a href="" class="text-decoration-none text-white">
+                      <i class="fas fa-chevron-left me-1"></i>کلکسیون
+                    </a>
+                      </li>
+
+                      <li class="my-3">
+                        <a href="" class="text-decoration-none text-white">
+                          <i class="fas fa-chevron-left me-1"></i>وبلاگ
+                        </a>
+                          </li>
+
+                          <li class="my-3">
+                            <a href="" class="text-decoration-none text-white">
+                              <i class="fas fa-chevron-left me-1"></i>درباره ما
+                            </a>
+                              </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 order-lg-2 order-md-3">
+              <h5 class="fw-light mb-3">ارتباط با ما</h5>
+              <div class="d-flex justify-content-start align-items-start my-2">
+                <span class="me-3">
+                  <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <span class="fw-light text-white-50">
+                  با تولید ,سادگی نامفهوم,از صنعت چاپ.
+                </span>
+            </div>
+            
+              <div class="d-flex justify-content-start align-items-start my-2 ">
+                <span class="me-3">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="fw-light text-white-50">
+                  lebas@gmail.com
+                </span>
+              </div>
+
+              <div class="d-flex justify-content-start align-items-start my-2">
+                <span class="me-3">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="fw-light text-whileft">
+                  0912-------
+                </span>
+              </div>
+
+              
+
+          </div>
+          <div class="col-md-6 col-lg-3 order-lg-1 order-md-4">
+            <h5 class="fw-light mt-1 ">شبکه های اجتماعی</h5>
+            <div class="d-flex">
+              <ul class="list-unstyled d-flex gap-5">
+                <li class="my-3">
+                  <a href="" class="text-decoration-none text-white">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+
+                <li class="my-3">
+                 <a href="" class="text-decoration-none text-white">
+                  <i class="fa-brands fa-twitter"></i>
+                 </a>
+                </li>
+
+                <li class="my-3">
+                 <a href="" class="text-decoration-none text-white">
+                   <i class="fa-brands fa-instagram"></i>
+                 </a>
+                </li>
+
+                <li class="my-3">
+                 <a href="" class="text-decoration-none text-white">
+             <i class="fa-brands fa-telegram"></i>
+                 </a>
+                </li>
+       </ul>
+        </div>
+        </div>
+          </div>
+         </footer>
+    <!-- end of footer -->
+    <!-- jquery js-->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- isotop js -->
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

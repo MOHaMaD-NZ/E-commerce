@@ -1,0 +1,139 @@
+@font-face {
+  font-family: iran;
+  src: url(../font/iran.ttf);
+}
+
+:root {
+  --pink: #e5345b;
+}
+
+body {
+  font-family: iran;
+}
+
+/* button */
+
+.bg-primary {
+  background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btns button) {
+  background-color: #fff;
+  color: rgb(85, 85, 85);
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+  background-color: var(--pink);
+  color: #fff;
+  border-color: var(--pink);
+}
+/* text-color */
+.text-primary {
+  color: var(--pink) !important;
+}
+
+/* navbar */
+.navbar-brand i {
+  font-size: 30px;
+  color: var(--pink);
+}
+
+.navbar-brand span {
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  color: var(--pink) !important;
+}
+/* header */
+#header {
+  background: url(../images/o3.png);
+}
+
+.carousel-inner h1 {
+  font-size: 60px;
+}
+
+/* title */
+.title h2::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink);
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn {
+  color: #fff !important;
+  border-color: var(--pink) !important;
+  background-color: var(--pink) !important;
+}
+
+.collection-text:hover {
+  color: #fff !important;
+}
+
+.collection-img span {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: translateX(-60px);
+}
+
+/* special */
+.special-img span {
+  top: 20px;
+  right: 20px;
+}
+.special-list .btn {
+  padding: 8px 20px !important;
+}
+
+.special-img img:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+/* offer */
+
+.img img {
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  width: 70%;
+  height: 500px;
+}
+.offers-content {
+  z-index: 100;
+  position: absolute;
+  left: 0px;
+}
+
+/* blogs */
+.img-card {
+  height: 200px;
+}
+
+/* news letter */
+#news-letter .btn {
+  color: #fff;
+  background: var(--pink) !important;
+  border-color: var(--pink) !important;
+}
+
+#news-letter .btn:hover {
+  background: #000 !important;
+  border-color: #000 !important;
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+}
